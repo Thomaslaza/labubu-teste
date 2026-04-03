@@ -21,3 +21,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+print("labubu rei")
+print("caralhoooo")
