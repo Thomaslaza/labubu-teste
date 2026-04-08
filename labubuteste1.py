@@ -1,25 +1,23 @@
-import random
 
-def gerar_lista(tamanho):
-    return [random.randint(1, 100) for _ in range(tamanho)]
+idade=int(input("quantas idades deseja por: "))
 
-def filtrar_pares(lista):
-    return [x for x in lista if x % 2 == 0]
+cont= 0
+idademax=0
+idademin=0
+soma=0
+while(0>idade):
+    idade2=int(input("digite a idade: "))
+    
+    soma= soma+idade2
+    
+    if(idade<idademin):
+        idademin=idade
+    if(idade>idademax):
+        idademax=idade
+cont=cont+1
 
-def calcular_media(lista):
-    if not lista:
-        return 0
-    return sum(lista) / len(lista)
+media=soma/idade
 
-def main():
-    numeros = gerar_lista(10)
-    pares = filtrar_pares(numeros)
-    media = calcular_media(pares)
-    print("Lista:", numeros)
-    print("Pares:", pares)
-    print("Média dos pares:", media)
-
-if __name__ == "__main__":
-    main()
-print("labubu rei")
-print("caralhoooo")
+print("a: ",media)
+print("b:",idademin)
+print("c:",idademax)
